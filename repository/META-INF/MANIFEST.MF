@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OBR Repository for P2
+Bundle-SymbolicName: org.code-house.p2.obr.repository;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Import-Package: org.eclipse.core.resources,
+ org.eclipse.core.runtime,
+ org.eclipse.equinox.p2.core,
+ org.eclipse.equinox.p2.core.spi,
+ org.eclipse.equinox.p2.metadata,
+ org.eclipse.equinox.p2.query,
+ org.eclipse.equinox.p2.repository,
+ org.eclipse.equinox.p2.repository.artifact,
+ org.eclipse.equinox.p2.repository.artifact.spi,
+ org.eclipse.equinox.p2.repository.metadata,
+ org.eclipse.equinox.p2.repository.metadata.spi,
+ org.osgi.framework
+Service-ComponentX: OSGI-INF/metadata.xml, OSGI-INF/artifact.xml
+Export-Package: p2obr,
+ p2obr.artifact,
+ p2obr.metadata
+Require-Bundle: org.eclipse.equinox.p2.metadata.repository
